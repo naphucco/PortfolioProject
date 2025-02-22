@@ -1,7 +1,18 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Navbar from "./navbar";
+"use client";
+
+import Contact from "./components/Contact";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects";
+
 
 export default function Home() {
-  return <Navbar />;
+  return (
+    <main className="min-vh-100 bg-dark text-white">
+      <Navbar />
+      <Hero />
+      <Projects />
+      <Contact />
+    </main>
+  );
 }
